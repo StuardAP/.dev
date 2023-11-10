@@ -1,0 +1,36 @@
+[user]
+  name = "Stuard Ambrosio"
+  email = "boy.shut.in@gmail.com"
+
+[credential]
+  helper = store
+  helper = wincred
+
+[core]
+  editor = nvim
+  ignorecase = false
+  autocrlf = true
+
+[safe]
+  directory = C:/tools/flutter-base-dir
+
+[color]
+  ui = true
+
+[help]
+  autocorrect = 1
+
+[alias]
+ # The '%h' is the abbreviated hash, '%s' is the subject, '%ad' is the author date, and '%an' is the author name.
+    history = "log --pretty=format:'%C(yellow)%h%C(reset) - %s %C(dim)%ad <%an>' --date=relative"
+ # Modify last commit message
+    amend = commit -a --amend
+
+ # Interactive rebase on the last n commits, where n is provided as an argument to the alias.
+    # For example, 'git irebase 5' would start an interactive rebase for the last 5 commits.
+    irebase = "!r() { git rebase -i HEAD~$1; }; r"
+
+ # Search for a string in the entire history of the repository.
+ # Usage: 'git search <string>'
+    search = "!f() { git rev-list --all | xargs git grep -F \"$*\"; }; f"
+

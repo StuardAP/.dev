@@ -1,3 +1,8 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Timeout for commands executed by starship (ms)
+command_timeout = 1000
+
 format = """
 [ ░▒▓](#a3aed2)\
 [  ](bg:#a3aed2 fg:#090c0c)\
@@ -16,8 +21,6 @@ $time\
 [ ](fg:#1d2230)\
 \n $character"""
 
-[command_duration]
-command_timeout = 10
 
 [character]
 error_symbol = '[⚛](bold red) '

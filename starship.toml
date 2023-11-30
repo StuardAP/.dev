@@ -23,7 +23,7 @@ $time\
 
 
 [character]
-error_symbol = '[⚛](bold red) '
+error_symbol = '[✘](bold red) '
 
 [directory]
 style = "fg:#1d2230 bg:#769ff0"

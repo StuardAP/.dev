@@ -1,1 +1,3 @@
-# Ediatando ando
+# CONFIG
+
+Personal configuration for development.
